@@ -24,7 +24,7 @@ SECRET_KEY = 'so15316s5dg!5yg@f9+n9m!ve-p)moo7-7%+vp3x3+5&*3(ii='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://pfdp.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'pfdp.herokuapp.com']
 
 # Application definition
 
