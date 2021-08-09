@@ -1,0 +1,76 @@
+[33mcommit 26403319c32bd0cd472582f1cc0e66473131fc53[m[33m ([m[1;36mHEAD -> [m[1;32mritik_frontend[m[33m)[m
+Author: Ritik Mishra <ritikmishra2606@gmail.com>
+Date:   Thu Aug 5 11:01:54 2021 +0530
+
+    3page
+
+[1mdiff --git a/.vscode/settings.json b/.vscode/settings.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2b7e46d[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/settings.json[m
+[36m@@ -0,0 +1,3 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "python.formatting.provider": "yapf"[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/home/img/signal_logo.png b/home/img/signal_logo.png[m
+[1mdeleted file mode 100644[m
+[1mindex 387a7b9..0000000[m
+Binary files a/home/img/signal_logo.png and /dev/null differ
+[1mdiff --git a/home/templates/home/about.html b/home/templates/home/about.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..29b04c7[m
+[1m--- /dev/null[m
+[1m+++ b/home/templates/home/about.html[m
+[36m@@ -0,0 +1,73 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m  <head>[m
+[32m+[m[32m    <link[m
+[32m+[m[32m      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"[m
+[32m+[m[32m      rel="stylesheet"[m
+[32m+[m[32m      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"[m
+[32m+[m[32m      crossorigin="anonymous"[m
+[32m+[m[32m    />[m
+[32m+[m
+[32m+[m[32m    <style>[m
+[32m+[m[32m      div {[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        margin-bottom: 10px;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      label {[m
+[32m+[m[32m        margin: 5px;[m
+[32m+[m[32m      }[m
+[32m+[m[32m    </style>[m
+[32m+[m[32m    <title>Credits</title>[m
+[32m+[m[32m  </head>[m
+[32m+[m[32m  <body>[m
+[32m+[m[32m    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">[m
+[32m+[m[32m      <div class="container-fluid l-4">[m
+[32m+[m[32m        <a class="navbar-brand">Phonic Frequency Distribution Parser </a>[m
+[32m+[m
+[32m+[m[32m        <ul class="navbar-nav mr-auto">[m
+[32m+[m[32m      <li class="nav-item active">[m[41m  [m
+[32m+[m[32m        <a class="nav-link text-light" href="/">Home</a>[m
+[32m+[m[32m      </li>[m
+[32m+[m[32m      <li class="nav-item">[m
+[32m+[m[32m        <a class="nav-link text-light" href="/about">About</a>[m
+[32m+[m[32m      </li>[m
+[32m+[m[32m      <li class="nav-item">[m
+[32m+[m[32m        <a class="nav-link text-light" href="/demo">Demo</a>[m
+[32m+[m[32m      </li>[m
+[32m+[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </nav>[m
+[32m+[m
+[32m+[m[32m    </br>[m
+[32m+[m
+[32m+[m[32m    <div class="container-fluid">[m
+[32m+[m
+[32m+[m[32m      <img src = " https://upload.wikimedia.org/wikipedia/commons/4/47/Ietlogo.png" width=200>[m
+[32m+[m[32m      <h4> Electronics and Communication Department, IET Lucknow </h4>[m
+[32m+[m
+[32m+[m[32m      </br>[m
+[32m+[m[32m      <h5> Under the Guidance of: </h5>[m
+[32m+[m[32m      <img src="data:image/jpeg;base64,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
