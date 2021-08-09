@@ -12,3 +12,6 @@ sqlparse==0.4.1
 toml==0.10.2
 virtualenv==20.4.7
 yapf==0.31.0
+matplotlib
+sounddevice
+scipy
